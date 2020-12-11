@@ -1,3 +1,3 @@
 # Caching
 
-A description of this package.
+Simple in-memory caching for Codable Swift types
