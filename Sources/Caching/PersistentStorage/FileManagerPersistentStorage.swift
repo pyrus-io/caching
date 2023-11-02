@@ -1,12 +1,12 @@
+//
+//  FileManagerPersistentStorage.swift
+//
+//  Created by K N on 2023-10-31.
+//
+
 import Foundation
 
-public protocol PersistentStorageManagingService {
-    func store(data: Data, withName name: String)
-    func retrieve(dataNamed name: String) -> Data?
-    func delete(dataNamed name: String) throws
-}
-
-public final class PersistentStorageManager: PersistentStorageManagingService {
+public final class FileManagerPersistentStorage: PersistentStorageManagingService {
     
     public let directoryUrl: URL
     
